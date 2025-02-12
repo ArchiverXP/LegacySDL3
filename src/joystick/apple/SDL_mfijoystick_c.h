@@ -28,46 +28,5 @@
 #import <CoreFoundation/CoreFoundation.h>
 #import <Foundation/Foundation.h>
 
-@class GCController;
-
-typedef struct joystick_hwdata
-{
-    GCController __unsafe_unretained *controller;
-    void *rumble;
-    int pause_button_index;
-    Uint64 pause_button_pressed;
-
-    char *name;
-    SDL_Joystick *joystick;
-    SDL_JoystickID instance_id;
-    SDL_GUID guid;
-
-    int naxes;
-    int nbuttons;
-    int nhats;
-    Uint32 button_mask;
-    bool is_xbox;
-    bool is_ps4;
-    bool is_ps5;
-    bool is_switch_pro;
-    bool is_switch_joycon_pair;
-    bool is_switch_joyconL;
-    bool is_switch_joyconR;
-    bool is_stadia;
-    bool is_backbone_one;
-    int is_siri_remote;
-
-    NSArray __unsafe_unretained *axes;
-    NSArray __unsafe_unretained *buttons;
-
-    bool has_dualshock_touchpad;
-    bool has_xbox_paddles;
-    bool has_xbox_share_button;
-    bool has_nintendo_buttons;
-
-    struct joystick_hwdata *next;
-} joystick_hwdata;
-
-typedef joystick_hwdata SDL_JoystickDeviceItem;
 
 #endif // SDL_JOYSTICK_IOS_H
