@@ -1,3 +1,8 @@
+This is a port of SDL3 for mainly legacy iDevices (iOS 6 and the like), do note **that this port is regarded as mainly untested and is UNSTABLE.**
+
+
+
+Original README:
 
 Simple DirectMedia Layer (SDL for short) is a cross-platform library
 designed to make it easy to write multi-media software, such as games
